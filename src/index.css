@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-accent: #f97316;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#f0f4f8] text-[#1e293b] antialiased;
+  }
+}
+
+.gradient-header {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #0ea5e9 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #2563eb 100%);
+}
+
+.glass-card {
+  @apply bg-white/90 backdrop-blur-md border border-white/40 shadow-lg;
+}
+
+.tool-card {
+  @apply bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/80;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-card:hover {
+  @apply shadow-xl border-primary/20;
+  transform: translateY(-6px);
+}
+
+.tool-card:hover .tool-card-icon {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.tool-card:hover .tool-card-btn {
+  @apply bg-primary text-white;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.badge-new {
+  background: linear-gradient(90deg, #f97316, #ef4444, #f97316);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
