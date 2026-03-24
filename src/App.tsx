@@ -1,6 +1,7 @@
 /**
- * Kho Công cụ AI - Cô Vũ Phương Thanh
+ * Kho Công cụ AI - Cô Thu Trang
  * Website cá nhân giới thiệu các ứng dụng AI hỗ trợ giảng dạy
+ * Trường THPT Sơn Dương
  */
 
 import React, { useState } from 'react';
@@ -69,7 +70,7 @@ export default function App() {
               </div>
               <div>
                 <h1 className="font-bold text-lg leading-tight tracking-tight">KHO CÔNG CỤ AI</h1>
-                <p className="text-white/70 text-[11px] font-medium">Cô Vũ Phương Thanh</p>
+                <p className="text-white/70 text-[11px] font-medium">Cô Thu Trang — THPT Sơn Dương</p>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-1 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
@@ -95,7 +96,7 @@ export default function App() {
             >
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-1.5 mb-6 border border-white/10">
                 <Sparkles size={14} className="text-amber-300" />
-                <span className="text-sm font-medium text-white/90">Phát triển bởi cô Vũ Phương Thanh</span>
+                <span className="text-sm font-medium text-white/90">Phát triển bởi cô Thu Trang — Trường THPT Sơn Dương</span>
               </div>
               <h2 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
                 Kho Công cụ AI<br />
@@ -234,7 +235,7 @@ export default function App() {
           </div>
           <h3 className="text-2xl font-bold text-slate-800 mb-2">Sắp có thêm công cụ mới!</h3>
           <p className="text-slate-500 max-w-lg mx-auto">
-            Cô Phương Thanh đang phát triển thêm nhiều công cụ AI thú vị khác. Hãy quay lại thường xuyên để khám phá nhé!
+            Cô Thu Trang đang phát triển thêm nhiều công cụ AI thú vị khác. Hãy quay lại thường xuyên để khám phá nhé!
           </p>
         </div>
       </section>
@@ -249,7 +250,7 @@ export default function App() {
               </div>
               <div>
                 <p className="font-bold text-slate-800">Kho Công cụ AI</p>
-                <p className="text-xs text-slate-500">Phát triển bởi cô Vũ Phương Thanh</p>
+                <p className="text-xs text-slate-500">Cô Thu Trang — Trường THPT Sơn Dương</p>
               </div>
             </div>
             <div className="flex items-center gap-1 text-sm text-slate-500">
